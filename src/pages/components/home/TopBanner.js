@@ -9,7 +9,7 @@ export default function TopBanner() {
                     Premium self-care done your way
                 </h2>
                 <p className="text-xl my-5  ">We all have unique ways of offering ourselves care. This is your space to create a routine catered to your body, mind, and schedule.</p>
-                <button className="primaryBTN px-4 py-2 rounded-md text-gray-100 font-semibold">Start free trial</button>
+                <button className="primaryBTN py-3 rounded-3xl px-4 text-white font-semibold">Start free trial</button>
             </div>
             <Image src={banner} alt='d' layout="responsive"></Image>
         </div>
