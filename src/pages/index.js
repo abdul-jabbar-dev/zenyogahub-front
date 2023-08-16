@@ -1,4 +1,5 @@
 
+import { useGetClassesQuery } from '@/redux/api/class/classApi'
 import BalanceTimerBanner from './components/home/BalanceTimerBanner'
 import ClassBanner from './components/home/ClassBanner'
 import MemberBanner from './components/home/MemberBanner'
@@ -9,6 +10,8 @@ import TopBanner from './components/home/TopBanner'
 import RootFooter from './layout/footer/RootFooter'
 import RootNavbar from './layout/navbar/RootNavbar'
 export default function Home() {
+  const {data} = useGetClassesQuery()
+  console.log(data)
   return (
     <main>
       <TopBanner />

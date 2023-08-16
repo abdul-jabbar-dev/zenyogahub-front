@@ -1,0 +1,6 @@
+{
+    "/api/*": "/$1",
+    "/:resource/:class_id/show": "/:resource/:class_id",
+    "/posts/:category": "/posts?category=:category",
+    "/classes\\?id=:id": "/posts/:class_id"
+}

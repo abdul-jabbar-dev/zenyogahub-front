@@ -27,10 +27,12 @@ export default function RootNavbar({ children }) {
                 }`}>
                 <div className="container mx-auto flex justify-between">
                     <div>
-                        <Image alt='logo' src={ico} width="50" height="50"/>
+                        <Image alt='logo' src={ico} width="50" height="50" />
                     </div>
                     <div className="my-auto">
-                        <Link href="getting started"><button className="uppercase hover:border-b transition-all delay-200  ">get started</button></Link>
+                        <Link href="start">
+                            <button className="uppercase border hover:border-gray-300 border-white rounded-full px-3 py-2  transition-all delay-100  ">get started</button>
+                        </Link>
                     </div>
                 </div>
             </div>

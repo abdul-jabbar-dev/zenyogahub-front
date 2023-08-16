@@ -38,7 +38,7 @@ export default function Reviews() {
                         <div className="flex justify-center flex-col text-center">
                             <div className="flex mx-auto space-x-1">
                                 {
-                                    [...Array(parseInt(review.rating))].map((i) => <Image key={i} src={ret.src} width='16' alt={i} height='16' />)
+                                    [...Array(parseInt(review.rating))].map((j,jj) => <Image key={jj} src={ret.src} width='16' alt={i} height='16' />)
                                 }
                             </div>
                             <h1 className="my-3 text-xl ">{review.name}</h1>
