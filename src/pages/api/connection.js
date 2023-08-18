@@ -8,13 +8,16 @@ const client = new MongoClient("mongodb+srv://abduljabbardev:abduljabbardev@clus
     }
 
 });
+let connectionPromise;
 async function run() {
     await client.connect();
     const db = await client.db("zenyogahub")
     const userCol = await db.collection('users')
     const classesCol = await db.collection('classes')
+    const subscriberCol = await db.collection('subscriber')
     console.log("You successfully connected to MongoDB!");
 
-    return { userCol, classesCol }
+    return { userCol, classesCol, subscriberCol }
 }
+export const dbCon = await client.connect();
 export default run
