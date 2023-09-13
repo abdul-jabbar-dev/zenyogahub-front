@@ -7,17 +7,17 @@ const client = new MongoClient("mongodb+srv://abduljabbardev:abduljabbardev@clus
         deprecationErrors: true,
     }
 
-});
-let connectionPromise;
+}); 
 async function run() {
     await client.connect();
     const db = await client.db("zenyogahub")
     const userCol = await db.collection('users')
     const classesCol = await db.collection('classes')
     const subscriberCol = await db.collection('subscriber')
+    const lacturesCol = await db.collection('lactures')
     console.log("You successfully connected to MongoDB!");
 
-    return { userCol, classesCol, subscriberCol }
+    return { userCol, classesCol, subscriberCol, lacturesCol }
 }
 export const dbCon = await client.connect();
 export default run

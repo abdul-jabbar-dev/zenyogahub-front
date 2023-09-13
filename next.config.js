@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['lh3.googleusercontent.com'], // Add the hostname here
+    domains: ['lh3.googleusercontent.com', "platform-lookaside.fbsbx.com"], // Add the hostname here
   },
 }
 

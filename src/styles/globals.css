@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.primaryBTN{
-  background-color: purple;
+@layer components {
+  .primaryBTN {
+    @apply bg-orange-600;
+  }
 }

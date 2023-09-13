@@ -10,7 +10,6 @@ import back from '../../../assets/icons/back.svg'
 import { useRouter } from 'next/router'
 
 export default function Index() {
-    const router = useRouter()
     const [show, setShow] = useState(false)
     const [credential, setCredential] = useState({ email: "", password: "", name: "" })
     const createAccount = (e) => {
